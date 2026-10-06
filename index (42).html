@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FinPrep · Préparation CFA, ACCA, CAIA, CIIA</title>
+  <meta name="description" content="Fiches PDF de synthèse, banques de QCM et exercices corrigés pour réussir le CFA, l'ACCA, le CAIA et le CIIA. Pensé pour le mobile et le travail hors-ligne.">
+  <meta name="theme-color" content="#0E2240">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/icon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#app">Aller au contenu</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#/" class="brand" aria-label="FinPrep, accueil">
+        <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#fff"/><path d="M9 23V9h13v3.2h-9.2v2.6h8v3.1h-8V23z" fill="#0E2240"/></svg>
+        <span>FinPrep</span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Navigation principale"></nav>
+    </div>
+  </header>
+
+  <div id="offline-banner" class="offline-banner" hidden>
+    Vous êtes hors-ligne. Les modules et quiz déjà ouverts sur cet appareil restent disponibles.
+  </div>
+
+  <main id="app" class="container main" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>FinPrep · Préparation aux certifications financières internationales.</p>
+      <p class="muted">CFA®, ACCA, CAIA® et CIIA® sont des marques de leurs organismes respectifs. FinPrep n'est affilié à aucun d'entre eux.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

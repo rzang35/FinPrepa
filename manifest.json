@@ -1,0 +1,10 @@
+{
+  "name": "FinPrep — Préparation aux certifications financières",
+  "short_name": "FinPrep",
+  "start_url": "/#/dashboard",
+  "display": "standalone",
+  "background_color": "#F3F5F8",
+  "theme_color": "#0E2240",
+  "lang": "fr",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}

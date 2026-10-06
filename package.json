@@ -1,0 +1,27 @@
+{
+  "name": "finprep",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FinPrep - plateforme de préparation aux certifications financières (CFA, ACCA, CAIA, CIIA). PDF, QCM, exercices corrigés, pensée pour le mobile et le hors-ligne.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset-db": "node -e \"require('fs').rmSync('data',{recursive:true,force:true})\" && node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "better-sqlite3": "^13.0.3",
+    "compression": "^1.8.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^18.0.5",
+    "express": "^4.22.3",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.4.0"
+  }
+}
